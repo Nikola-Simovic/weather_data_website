@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#weather-data {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 10px 0;
+  flex: 0 0 30%;
+
+  border: 1px solid black;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 8px;
+}
+
+thead {
+  background-color: pink;
+}
+
+th {
+  background-color: #f4ebde;
+  color: rgb(0, 0, 0);
+}
+
+tr:nth-child(even) {
+  background-color: #4d6489;
+}
+
+tr:nth-child(odd) {
+  background-color: #78809d;
+}
+
+tr:hover {
+  background-color: #314c6f;
+}
+
+#first_container {
+  display: flex;
+}
+#content1 {
+  color: white;
+  flex: 1;
+}
+#current-weather-text {
+  flex: 1;
+  padding-top: 370px;
+  text-align: center;
+  color: #000000;
+}
+#content3 {
+  display: none;
+  color: white;
+}
+#content4 {
+  display: none;
+  color: black;
+  margin-left: 150px;
+}
+#content5 {
+  display: none;
+  color: white;
+}
+
+#wind-speed-chart {
+  white-space: pre-wrap;
+}
+
+.button-links {
+  padding-top: 20px;
+  display: flex;
+  margin-left: 50px;
+}
+
+.button-links > * {
+  margin-right: 20px; /* add 10 pixels of margin below each child element of the div */
+}
+
+.button-links button {
+  background-color: #4d6489;
+  color: white;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+.button-links button:hover {
+  cursor: pointer;
+  background-color: #f4ebde !important;
+  transition: 1s;
+  color: #1f3c5c;
+}
+
+.button-links button.clicked:hover {
+  background-color: #1f3c5c !important ;
+  color: #bcbcbc;
+}
+
+#information-mode-button {
+  margin-left: auto;
+  padding-right: 50px;
+}
+
+#data-table {
+  margin-top: 75px;
+  margin-left: 50px;
+}
+
+#button-nav {
+  background-color: #6384a2;
+}
+
+#wind-selection {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: black;
+}
+#wind-selection h1 {
+  margin-bottom: 10px;
+}
+
+#wind_table_graph_container {
+  display: flex;
+  max-width: 100%;
+}
+#third-data-table {
+  flex: 1;
+  text-align: center;
+  margin-left: 150px;
+  max-width: 500px !important;
+}
+#third-data-table tr {
+  max-height: 3px !important;
+}
+#wind-speed-chart {
+  flex: 1;
+  padding-left: 50px;
+  max-width: 1100px !important;
+  max-height: 600px !important;
+}
+
+#custom-selection-type {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  text-align: center;
+  color: black;
+}
+#custom-selection-type h1 {
+  margin-bottom: 15px;
+}
+#custom-selection {
+  margin-top: 0px;
+  text-align: center;
+  color: black;
+}
+
+#custom-table-graph-container {
+  display: flex;
+  max-width: 100%;
+}
+#custom-data-table {
+  flex: 1;
+  text-align: center;
+  margin-left: 150px;
+  max-width: 500px !important;
+}
+#custom-data-table tr {
+  max-height: 3px !important;
+}
+#custom-speed-chart {
+  flex: 1;
+  padding-left: 50px;
+  max-width: 1100px !important;
+  max-height: 600px !important;
+}
+
+#content2 {
+  display: none;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 860px;
+  text-align: center;
+  color: black;
+}
+#content2 h1 {
+  margin-bottom: 10px;
+}
+
+#selection1 {
+  margin-top: 0px;
+  text-align: center;
+  color: black;
+}
+
+#table_graph_container {
+  display: none;
+  max-width: 100%;
+  color: white;
+}
+#second-data-table {
+  flex: 1;
+  text-align: center;
+  margin-left: 150px;
+  max-width: 500px !important;
+}
+#second-data-table tr {
+  max-height: 3px !important;
+}
+#temperature-chart {
+  flex: 1;
+  padding-left: 50px;
+  max-width: 1100px !important;
+  max-height: 600px !important;
+}
+
+#content4 h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#content4 h2 {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+#info-title {
+  text-align: center;
+  margin-right: 140px;
+}
+
+#bodyId {
+  background-color: #f9f4e8;
+}
+
+#tab4 {
+  margin-left: 15px;
+}

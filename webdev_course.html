@@ -1,0 +1,153 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather Data Website</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body id="bodyId">
+
+    <!--------------------------------------------------------------------------buttons-------------------------------------------------------->
+    <nav id="button-nav">
+    <div class="button-links">
+    <button id="tab1">Weather Measurements</button>
+    <button id="tab2">Temperature Measurements</button>
+    <button id="tab3">Wind speed Measurements</button>
+    <button id="tab5">Custom Search Options</button>
+    <div id="information-mode-button"><button id="colourModeButton">Colour Mode</button><button id="tab4">Info</button></div>
+    </div>
+    </nav>
+    
+  <!---------------------------------------------------------------------------first tab content--------------------------------------------->
+  <div id="first_container">
+    <div id="current-weather-text"><h1>The latest 30 measurements<br> are as follows:</h1><h5>(for a more detailed view visit our other pages)</h5></div>
+    <div id="content1">
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Type</th>
+            <th>Value (SI)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    </div>
+
+<!-----------------------------------------------------------------------------second tab content--------------------------------------------->
+    <div id="content2">
+      <div id="selection1"><h1>Temperatures:</h1>
+        <label for="interval-select">Select time interval:</label>
+        <select id="interval-select">
+          <option value="">Now</option>
+          <option value="23">24 hours</option>
+          <option value="47">48 hours</option>
+          <option value="71">72 hours</option>
+          <option value="167">1 week</option>
+        </select>
+        </div>
+        
+      </div>
+
+      <div id="table_graph_container">
+      <table id="second-data-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Temperature (ºC)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <canvas id="temperature-chart"></canvas>
+      </div>
+    </div>
+<!------------------------------------------------------------------------------------third tab content------------------------------------>
+    <div id="content3">
+      <div id="wind-selection"><h1>Wind speed data:</h1>
+        <label for="wind-interval-select">Select time interval:</label>
+        <select id="wind-interval-select">
+          <option value="">Now</option>
+          <option value="23">24 hours</option>
+          <option value="47">48 hours</option>
+          <option value="71">72 hours</option>
+          <option value="167">1 week</option>
+        </select>
+      </div>
+      <div id="wind_table_graph_container">
+      <table id="third-data-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Wind speed(m/s)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <canvas id="wind-speed-chart"></canvas>
+    </div>
+    </div>
+<!----------------------------------------------------------------------------------info tab content-------------------------------------->
+    <div id="content4">
+      <h1 id="info-title">Information about author and other notes:</h1>
+      
+      <h2>Name:  Nikola Simovic</h2>
+      <h2>Email: nikola.simovic@tuni.fi</h2>
+      <h2>Creators notes:</h2>
+      <h3>Copyright: Nikola Simovic, 2023.<br>This webpage was created in 2023 and all rights go to it's creator.</h3>
+
+
+    </div>
+<!----------------------------------------------------------------------------------custom selection content-------------------------------->
+    <div id="content5">
+      <div id="custom-selection-type"><h1>Please select a data type<br>and a time period<br></h1>
+        <label for="custom-type-select">Select the type:</label>
+        <select id="custom-type-select">
+          <option value="rain">Rain</option>
+          <option value="humidity_in">Humidity in</option>
+          <option value="humidity_out">Humidity out</option>
+          <option value="light">Light</option>
+          <option value="temperature">Temperature</option>
+          <option value="wind_speed">Wind Speed</option>
+          <option value="wind_direction">Wind Direction</option>
+        </select>
+      </div>
+      <div id="custom-selection">
+        <label for="custom-interval-select">Select time interval:</label>
+        <select id="custom-interval-select">
+          <option value="">Now</option>
+          <option value="23">24 hours</option>
+          <option value="47">48 hours</option>
+          <option value="71">72 hours</option>
+          <option value="167">1 week</option>
+        </select>
+      </div>
+      <div id="custom-table-graph-container">
+      <table id="custom-data-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>The date</th>
+            <th>The time</th>
+            <th>Value (SI)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <canvas id="custom-speed-chart"></canvas>
+    </div>
+    </div>
+<!----------------------------------------------------------------script and end of body------------------------------------------------->
+    <script src="script.js"></script>
+  </body>
+</html>
